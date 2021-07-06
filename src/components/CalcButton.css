@@ -16,3 +16,9 @@ button {
 .special {
   background-color: rgb(222, 146, 114);
 }
+
+.clear {
+  background-color: rgb(222, 222, 222);
+  width: 280px;
+  padding: 25px 0 25px 0;
+}

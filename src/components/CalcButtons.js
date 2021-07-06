@@ -34,6 +34,9 @@ const CalcButtons = props => {
                     <Button bTitle="="></Button>
                     <Button class="special" bTitle="/"></Button>
                 </Box>
+                <Box display="flex" alignItems="center" justifyContent="center">
+                    <Button class="clear" bTitle="Clear"></Button>
+                </Box>
 
             </Box>
 

@@ -1,0 +1,18 @@
+button {
+  background-color: white;
+  padding: 20px;
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  line-height: 1.1em;
+  font-size: 1.1em;
+  border-style: none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+}
+
+.special {
+  background-color: rgb(222, 146, 114);
+}

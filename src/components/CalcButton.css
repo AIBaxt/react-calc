@@ -13,8 +13,16 @@ button {
   border-color: black;
 }
 
+button:hover {
+  background-color: rgb(180, 180, 180);
+}
+
 .special {
   background-color: rgb(222, 146, 114);
+}
+
+.special:hover {
+  background-color: orange;
 }
 
 .clear {

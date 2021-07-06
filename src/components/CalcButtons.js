@@ -2,40 +2,43 @@
 import { Fragment } from 'react';
 //Styling
 import './CalcButton.css';
-import { Box, Toolbar } from '@material-ui/core';
+import { Box } from '@material-ui/core';
 import Button from './UI/Button';
 
 const CalcButtons = props => {
+    const displayTextUpdater = event => {
+        props.onButtonPress(event.currentTarget.id);
+    };
 
     return (
         <Fragment>
             <Box >
                 <Box display="flex" alignItems="center" justifyContent="center">
-                    <Button bTitle="7"></Button>
-                    <Button bTitle="8"></Button>
-                    <Button bTitle="9"></Button>
-                    <Button class="special" bTitle="X"></Button>
+                    <Button bTitle="7" clickable={displayTextUpdater}></Button>
+                    <Button bTitle="8" clickable={displayTextUpdater}></Button>
+                    <Button bTitle="9" clickable={displayTextUpdater}></Button>
+                    <Button className="special" bTitle="X" clickable={displayTextUpdater}></Button>
                 </Box>
                 <Box display="flex" alignItems="center" justifyContent="center">
-                    <Button bTitle="4"></Button>
-                    <Button bTitle="5"></Button>
-                    <Button bTitle="6"></Button>
-                    <Button class="special" bTitle="-"></Button>
+                    <Button bTitle="4" clickable={displayTextUpdater}></Button>
+                    <Button bTitle="5" clickable={displayTextUpdater}></Button>
+                    <Button bTitle="6" clickable={displayTextUpdater}></Button>
+                    <Button className="special" bTitle="-" clickable={displayTextUpdater}></Button>
                 </Box>
                 <Box display="flex" alignItems="center" justifyContent="center">
-                    <Button bTitle="1"></Button>
-                    <Button bTitle="2"></Button>
-                    <Button bTitle="3"></Button>
-                    <Button class="special" bTitle="+"></Button>
+                    <Button bTitle="1" clickable={displayTextUpdater}></Button>
+                    <Button bTitle="2" clickable={displayTextUpdater}></Button>
+                    <Button bTitle="3" clickable={displayTextUpdater}></Button>
+                    <Button className="special" bTitle="+" clickable={displayTextUpdater}></Button>
                 </Box>
                 <Box display="flex" alignItems="center" justifyContent="center">
-                    <Button bTitle="0"></Button>
-                    <Button bTitle="."></Button>
-                    <Button bTitle="="></Button>
-                    <Button class="special" bTitle="/"></Button>
+                    <Button bTitle="0" clickable={displayTextUpdater}></Button>
+                    <Button bTitle="." clickable={displayTextUpdater}></Button>
+                    <Button bTitle="=" clickable={displayTextUpdater}></Button>
+                    <Button className="special" bTitle="/" clickable={displayTextUpdater}></Button>
                 </Box>
                 <Box display="flex" alignItems="center" justifyContent="center">
-                    <Button class="clear" bTitle="Clear"></Button>
+                    <Button className="clear" bTitle="Clear"></Button>
                 </Box>
 
             </Box>

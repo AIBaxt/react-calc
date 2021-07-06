@@ -7,9 +7,9 @@ import { Box, Typography, Paper } from '@material-ui/core';
 const CalcDisplay = props => {
     return (
         <Box display="flex" alignItems="center" justifyContent="center">
-            <div class="display">
+            <div className="display">
                 <Box mr={2}>
-                    <Typography>Hello</Typography>
+                    <Typography>{props.displayText}</Typography>
                 </Box>
             </div>
         </Box >

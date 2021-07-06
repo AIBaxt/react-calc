@@ -7,11 +7,18 @@ import CalcDisplay from './CalcDisplay';
 import { Box, Paper } from '@material-ui/core';
 
 const Calculator = props => {
+
+    const [displayText, setDisplayText] = useState("0")
+
+    const displayTextUpdater = data => {
+        setDisplayText(data);
+    };
+
     return (
         <Box>
             <Paper>
-                <CalcDisplay />
-                <CalcButtons />
+                <CalcDisplay displayText={displayText} />
+                <CalcButtons onButtonPress={displayTextUpdater} />
             </Paper>
         </Box>
     );

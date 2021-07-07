@@ -14,31 +14,31 @@ const CalcButtons = props => {
         <Fragment>
             <Box >
                 <Box display="flex" alignItems="center" justifyContent="center">
-                    <Button bTitle="7" clickable={displayTextUpdater}></Button>
-                    <Button bTitle="8" clickable={displayTextUpdater}></Button>
-                    <Button bTitle="9" clickable={displayTextUpdater}></Button>
-                    <Button className="special" bTitle="X" clickable={displayTextUpdater}></Button>
+                    <Button bTitle="7" clickable={displayTextUpdater} />
+                    <Button bTitle="8" clickable={displayTextUpdater} />
+                    <Button bTitle="9" clickable={displayTextUpdater} />
+                    <Button className="special" bTitle=" * " clickable={displayTextUpdater} />
                 </Box>
                 <Box display="flex" alignItems="center" justifyContent="center">
-                    <Button bTitle="4" clickable={displayTextUpdater}></Button>
-                    <Button bTitle="5" clickable={displayTextUpdater}></Button>
-                    <Button bTitle="6" clickable={displayTextUpdater}></Button>
-                    <Button className="special" bTitle="-" clickable={displayTextUpdater}></Button>
+                    <Button bTitle="4" clickable={displayTextUpdater} />
+                    <Button bTitle="5" clickable={displayTextUpdater} />
+                    <Button bTitle="6" clickable={displayTextUpdater} />
+                    <Button className="special" bTitle=" - " clickable={displayTextUpdater} />
                 </Box>
                 <Box display="flex" alignItems="center" justifyContent="center">
-                    <Button bTitle="1" clickable={displayTextUpdater}></Button>
-                    <Button bTitle="2" clickable={displayTextUpdater}></Button>
-                    <Button bTitle="3" clickable={displayTextUpdater}></Button>
-                    <Button className="special" bTitle="+" clickable={displayTextUpdater}></Button>
+                    <Button bTitle="1" clickable={displayTextUpdater} />
+                    <Button bTitle="2" clickable={displayTextUpdater} />
+                    <Button bTitle="3" clickable={displayTextUpdater} />
+                    <Button className="special" bTitle=" + " clickable={displayTextUpdater} />
                 </Box>
                 <Box display="flex" alignItems="center" justifyContent="center">
-                    <Button bTitle="0" clickable={displayTextUpdater}></Button>
-                    <Button bTitle="." clickable={displayTextUpdater}></Button>
-                    <Button bTitle="=" clickable={displayTextUpdater}></Button>
-                    <Button className="special" bTitle="/" clickable={displayTextUpdater}></Button>
+                    <Button bTitle="0" clickable={displayTextUpdater} />
+                    <Button bTitle="." clickable={displayTextUpdater} />
+                    <Button bTitle="=" clickable={props.onEqualPress} />
+                    <Button className="special" bTitle=" / " clickable={displayTextUpdater} />
                 </Box>
                 <Box display="flex" alignItems="center" justifyContent="center">
-                    <Button className="clear" bTitle="Clear"></Button>
+                    <Button className="clear" bTitle="Clear" clickable={props.onClearPress} />
                 </Box>
 
             </Box>

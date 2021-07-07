@@ -1,8 +1,8 @@
 //Imports
-import { useState } from 'react';
+
 //Styling
 import './CalcDisplay.css';
-import { Box, Typography, Paper } from '@material-ui/core';
+import { Box, Typography } from '@material-ui/core';
 
 const CalcDisplay = props => {
     return (
